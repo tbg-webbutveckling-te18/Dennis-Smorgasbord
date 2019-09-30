@@ -1,3 +1,76 @@
+::selection {
+    background-color: orange;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 45px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #649;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
-    background-color: aqua;
+    background-color: #1abc9c;
+    margin: 0px;
+}
+
+section#wrapper {
+    display: block; /* standard on most of the elements */
+    width: 300px; /* width of the container */
+    min-height: 300px; /* height of the container */
+    
+    background-color: #3498db;
+    border: 1px solid #000; /* thickness style color */
+}
+
+section#wrapper p {
+    color: #fff;
+    border: 1px solid black;
+    margin-top: 0px;
+    padding: 5px 5px 5px 5px; /* top right bottom left */
+    text-align: center;
+}
+
+section#standardSectionUnique {
+    margin-right: 0px;
+    background-color: #639;
+}
+
+section.standardSection {
+    width: 200px;
+    height: 200px;
+    
+    background-color: #e74c3c;
+    margin: 10px auto; /* top/bottom left/right */
+    border: 1px solid black;
+    box-shadow: 2px 2px 0px #000;
+}
+
+section.standardChild {
+    width: 100%; /* 100% off of its parent */
+    height: 50px;
+    
+    background-color: #9b59b6;
+    border-bottom: 1px solid black;
+}
+
+section.standardSection img {
+    display: inline; /* a few elements have inline as standard */
+}
+
+.highlighted:hover {
+    margin-top: 50px;
 }
