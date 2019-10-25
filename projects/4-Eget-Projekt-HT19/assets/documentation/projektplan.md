@@ -34,6 +34,7 @@ Webbplatsen ska andas kvalité och påvisa människans nyfikenhet och kreativite
 * Beskriv idén med kompositionen på de olika sidorna
     * logotyper
     * Färger
+        * https://designshack.net/articles/trends/best-website-color-schemes/
         * #FB8122
         * #1D2228
         * #E1E2E2
