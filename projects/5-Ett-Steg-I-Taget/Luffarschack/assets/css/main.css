@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+body {
+    background-color: gray;
+}
+
+
+.grid-container {
+    width: 75%;
+    height: 80vh;
+    margin: auto;
+    
+    display: grid;
+    grid-template-areas: 
+        "a b c"
+        "d e f"
+        "g h i";
+}
+
+.grid-item:nth-child(even) {
+    background-color: burlywood;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.grid-item:nth-child(odd) {
+    background-color: cornflowerblue;
+}
+

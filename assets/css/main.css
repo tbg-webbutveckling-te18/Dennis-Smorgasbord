@@ -4,9 +4,19 @@ body {
     background-color: #e74c3c;
 }
 
+h1 {
+    color: #fff;   
+    text-shadow: 2px 2px 1px #000;
+    margin-left: 8%;
+    margin-bottom: 5px;
+    font-size: 46px;
+}
+
 .grid-container {
     width: 80vw;
     min-height: 90vh;
+    
+    padding: 20px;
     
     border: 1px solid white;
     margin: auto;
@@ -15,6 +25,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 200px;
     grid-gap: 15px;
+
 }
 
 .grid-container a {
@@ -29,12 +40,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .4s;
 }
 
 .grid-container a:nth-child(odd) {
     background-color: #3498db;
 }
 
-.grid-container a:nth-child(odd) {
+.grid-container a:nth-child(even) {
     background-color: #c0392b;
+}
+
+.grid-container a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 5px #000;
 }
