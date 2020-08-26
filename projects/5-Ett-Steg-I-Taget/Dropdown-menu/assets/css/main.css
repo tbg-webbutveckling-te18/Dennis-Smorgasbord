@@ -17,10 +17,16 @@ body {
     padding-left: 30px;
 }
 
+.sub-menu-1:hover {
+/*    background-color: aquamarine;*/
+}
+
 .sub-menu-1:hover .sub-menu-2 {
     visibility: visible;
     opacity: 1;
     height: 13vh;
+    background-color: red;
+
 }
 
 .sub-menu-2 {

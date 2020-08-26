@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontaktformulär</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <section class="form-container">
+        <!--   action = Adressen dit all data skickas     -->
+        <form action="" class="test-form">
+            <fieldset>
+                <legend><i class="fas fa-bars"></i> Kontaktformulär</legend>
+                <p>
+                    <label for="username"><i class="fas fa-house-user"></i> Användarnamn <span class="form-required">*</span></label>
+                    <input type="text" required id="username" placeholder="Skriv ditt användarnamn här..."> 
+                </p>
+                
+                <p>
+                    <label for="country"><i class="fas fa-globe-europe"></i> Land <span class="form-required">*</span></label>
+                    <input type="text" required id="country" placeholder="Vilket land bor du i..."> 
+                </p>
+                
+                <p>
+                    <label for="email"><i class="far fa-envelope"></i> E-post <span class="form-required">*</span></label>
+                    <input type="email" required id="email" placeholder="Skriv din e-postadress här..."> 
+                </p>
+                
+                <p>
+                   <label for=""><i class="fas fa-envelope-square"></i> Ditt meddelande: </label>
+                   <textarea maxlength="250" placeholder="Skriv ditt meddelande här..."></textarea>
+                </p>
+                
+                <p>
+                    <button type="submit"><i class="fas fa-file-import"></i> Skicka</button>
+                </p>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
