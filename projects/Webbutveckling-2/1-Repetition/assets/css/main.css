@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+body {
+	background-color: #ef5777;
+}
+
+h1 {
+	font-size: 52px;
+	color: white;
+	text-align: center;
+	/* text-decoration: underline; */
+	font-weight: 100;
+}
+
+p {
+	font-size: 16px;
+}
