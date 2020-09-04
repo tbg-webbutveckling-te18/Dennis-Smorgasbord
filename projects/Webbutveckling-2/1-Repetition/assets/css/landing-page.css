@@ -8,6 +8,8 @@
 
 	list-style: none;
 	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
 }
 
 body {
@@ -15,6 +17,9 @@ body {
 }
 
 header {
+	display: flex;
+	flex-flow: column;
+	justify-content: center; /* Main axis */
 	width: 100vw;
 	min-height: 40vh;
 
@@ -25,7 +30,9 @@ header {
 
 header h1 {
 	font-size: 64px;
-	line-height: 200px;
+	/* line-height: 200px; */
+	font-weight: 100;
+	text-transform: uppercase;
 }
 
 header button {
@@ -37,4 +44,116 @@ header button {
 
 	font-size: 22px;
 	font-weight: 200;
+	transition: all .2s;
+}
+
+header button:hover {
+	cursor: pointer;
+	background-color: #e17055;
+	color: #fff;
+}
+
+.container {
+	display: flex;
+}
+
+nav {
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	height: 100vh;
+	flex: 1;
+}
+
+ul {
+	background-color: teal;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+}
+
+ul li {
+	border-bottom: 2px solid white;
+	display: flex;
+	height: 50px;
+}
+
+ul li a {
+	color: #fff;
+	font-size: 22px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .3s;
+}
+
+ul li a:hover {
+	background-color: #e17055;
+	font-weight: 700;
+}
+
+main {
+	flex: 4;
+}
+
+.main-content {
+	height: 400px;
+	/* box-shadow: 0px 4px 4px #888; */
+
+	display: flex;
+}
+
+.main-child {
+	display: flex;
+	flex: 1;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #123; */
+	border: 1px solid #fff;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 42px;
+}
+
+.main-child h1 {
+	font-weight: 100;
+}
+
+.main-content .a {
+	background-image: url(../images/main/canada-lake.jpg);
+}
+.main-content .b {
+	background-image: url(../images/main/stockholm-city.jpg);
+}
+
+footer {
+	height: 250px;
+	border-top: 2px solid #888;
+	background-color: #800000;
+	display: flex;
+	flex-direction: row; /* MAIN AXIS */
+	flex-wrap: nowrap; /* Standard */
+	justify-content: space-around; /* Aligns flex-items along the MAIN AXIS */
+	color: white;
+}
+
+footer p {
+	font-size: 20px;
+}
+
+/******************************
+
+--------- Special classes --------
+
+******************************/
+.highlighted {
+	background-color: #e17055;
+	font-weight: 700;
+}
+
+.special {
+	font-size: 108px;
+	color: red;
 }
