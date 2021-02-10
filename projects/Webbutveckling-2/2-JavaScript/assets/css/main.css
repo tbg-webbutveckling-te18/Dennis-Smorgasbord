@@ -1,1 +1,87 @@
 @charset "utf-8";
+
+body {
+	background-color: #34ace0;
+	padding: 20px;
+}
+
+.time {
+	display: flex;
+}
+
+.time > * {
+	margin: 5px;
+}
+
+.stopTime {
+	background-color: #000;
+	color: silver;
+	border-radius: 5px;
+
+	outline: none;
+	border: none;
+
+	padding: 5px;
+
+	transition: transform .4s ease;
+}
+
+.stopTime:active {
+	transform: scale(1.5);
+}
+
+/*
+************************************************
+				Object.html
+************************************************
+*/
+
+.container {
+	display: flex;
+}
+
+#firstOutput, .posts {
+	min-height: 300px;
+	flex: 1;
+	border: 10px double black;
+	box-shadow: inset 2px 2px 10px black, 2px 2px 10px black;
+	padding: 20px;
+	align-items: flex-start;
+
+}
+
+.updateCity {
+	width: 250px;
+	height: 16px;
+	border: none;
+	outline: none;
+	transition: all .4s;
+}
+
+.updateCity:focus {
+	width: 400px;
+	height: 25px;
+}
+
+.changeText {
+	color: #649;
+	font-weight: bold;
+	text-shadow: 2px 24px 0px #000;
+	font-size: 32px;
+	letter-spacing: 4px;
+}
+
+.toggleBtnBG {
+	background-color: coral;
+}
+
+/*
+************************************************
+				Utility Classes
+************************************************
+*/
+
+.addFlex {
+	display: flex;
+	flex-flow: row wrap;
+}
