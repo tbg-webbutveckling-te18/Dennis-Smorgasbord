@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #DFDFDF;
+
+    width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+
+    background-color: #F2F2F2;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #707070;
+    text-align: right;
+
+    flex: 1;
+}
+
+.span-logo {
+    color: #007AF3;
+}
+
+nav {
+    flex: 3;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: space-evenly;
+
+    width: 70%;
+
+    font-size: 22px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    min-height: 1000px;
+}
+
+.main-left {
+    flex: 1;
+    background-color: #637692;
+}
+
+.main-center {
+    flex: 4;
+    background-color: #5F6C7E;
+}
+
+.main-right {
+    flex: 1;
+    background-color: #637692;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+
+    background-color: #3E4043;
+}
+
+
+/* Utility Classes */
+
+.add-flex {
+    display: flex;
+}
+
+.active {
+    font-weight: bold;
+}
