@@ -36,6 +36,10 @@ header h1 {
     color: #007AF3;
 }
 
+.mobile-icon {
+    display: none;
+}
+
 nav {
     flex: 3;
     justify-content: flex-end;

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body {
+    overflow: hidden;
+}
+
+header {
+    justify-content: center;
+    position: relative;
+}
+
+.span-logo {
+    color: #f30096;
+}
+
+.mobile-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.mobile-menu {
+    position: absolute;
+}
+
+.mobile-menu ul {
+    flex-direction: column;
+}
